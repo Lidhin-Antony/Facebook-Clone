@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing up for Facebook | Facebook</title>
+    <link rel="icon" href="img\2021_Facebook_icon.svg.webp" type="img" size="16x16">
+</head>
+
+<body>
+    <link rel="stylesheet" href="singup.css">
+    <div class="mainbg">
+        <div>
+            <img class="face" src="img\facebooksignup.svg" alt="facebooksignup">
+        </div>
+        <div class="fillup">
+            <div>
+                <div class="label1"><label>Create a new account<br></label></div>
+                <div class="label2"><label>It's quick and easy.</label></div>
+                <hr class="hrtag">
+            </div>
+            <form action="" method="post" id="form" onsubmit="return checkEmpty()">
+                <table  id="genderinvalidicon">
+                    <tr>
+                        <td><input class="firstname" type="text" name="firstname" placeholder="First name" id="firstname" onblur="validFirstName()" ></td>
+                        <div id="error"></div><div id="gendererror"></div>
+                    </tr>
+                    <tr>
+                        <td><input class="surname" type="text" name="surname" placeholder="Surname" id="surname" onblur="validSurName()"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="email" type="text" name="numemail" placeholder="Mobile number or email address" id="numemail" onblur="validMobEmail()"></td>
+                        <div id="error"></div>
+                    </tr>
+                    <tr>
+                        <td><input class="password" type="password" name="password" placeholder="New password" id="password" autocomplete="" onblur="validPassword()"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="labelDOB">Date of birth</label></td>
+                    </tr>
+                    <tr>
+                        <td><img class="question" src="img\5iQ0_SR0TRq (1).png" alt="5iQ0_SR0TRq (1)"></td>
+                    </tr>
+                    <tr>
+                        <td id="dobdiv">
+                            <select class="day" id="day" name="day" onblur="validDateOfBirth()"></select>
+                            <select class="month" id="month" name="month" onblur="validDateOfBirth()"></select>
+                            <select class="year" id="year" name="year" onblur="validDateOfBirth()"></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="labelgender">Gender</label></td>
+                    </tr>
+                    <tr>
+                        <td><img class="genderqustion" src="img\5iQ0_SR0TRq (1).png" alt="5iQ0_SR0TRq (1)"></td>
+                    </tr>
+                    <tr class="female" >
+                        <div>
+                            <td><label>Female</label><input class="femalebutton"  type="radio" name="Gender" value="female" id="female" onmousedown ="return mousedown()" onmouseup="return mouseup()"></td>
+                        </div>
+                    </tr>
+                    <tr class="male" >
+                        <div>
+                            <td><label>Male</label><input class="malebutton"  type="radio" name="Gender" value="male" id="male" onmousedown ="return mousedown()" onmouseup="return mouseup()"></td>
+                        </div>
+                    </tr>
+                    <tr class="custom" >
+                        <div>
+                            <td><label>Custom</label><input class="custombutton"  type="radio" name="Gender" value="custom" id="custom" onmousedown ="return mousedown()" onmouseup="return mouseup()"></td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="divlabel3">
+                                <p class="label3">People who use our service may have uploaded your contact information to<br> Facebook. <a href="https://www.facebook.com/help/637205020878504" class="a">Learn more.</a></p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="divlabel4">
+                                <p class="label4">By clicking Sign Up, you agree to our <a href="https://www.facebook.com/legal/terms/update" class="a">Terms</a>, <a href="https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0" class="a">Privacy Policy</a> and <a href="https://www.facebook.com/privacy/policies/cookies/?entry_point=cookie_policy_redirect&entry=0" class="a">Cookies Policy</a>.<br> You may receive SMS notifications from us and can opt out at any time</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input class="singupbutton" type="submit" value="Sign Up" name="submit" id="submit" href="face.html"></td>
+                    </tr>
+                </table>
+                <p><a class="alreadyaccount alink" href="face.html">Already have an account?</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="singup.js" type="text/javascript"></script>
+</body>
+</html>
